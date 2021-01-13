@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-dark: rgb(49, 57, 61);
+  --clr-light: rgb(163, 255, 57);
+}
+
+body {
+  min-height: 100vh;
+  font-family: monospace;
+  font-size: 1.25rem;
+display: flex;
+align-items: center;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.container {
+    display: flex;
+    margin: auto auto;
+    flex-direction: column;
+    align-items: space-between;
+    height: 500px;
+    width: 200px;
+}
+
+.container_box {
+    margin-bottom: 2em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type=number] {
+    margin-top: .5em;
+    padding: .5em 0.5em;
+    border-radius: 3px;
+    border-style: none;
+    background-color: rgb(80, 93, 100);
+    color: var(--clr-light);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+button {
+    font-family: inherit;
+    border-radius: 5px;
+    border-style: none;
+    font-size: inherit;
+    padding: .5em;
+    text-transform: uppercase;
+    background-color:  rgba(163, 255, 57, 0.781);
+    color: rgb(80, 93, 100);cursor: pointer;
+    
+}
+
+button:hover {
+    color:  rgba(163, 255, 57, 0.781);
+    background-color: rgb(80, 93, 100);
+    transition: .2s ease-in-out;
+}
+
+button:active {
+    transform: translate(1px, 2px);
+}
